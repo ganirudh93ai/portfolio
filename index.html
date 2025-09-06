@@ -2,135 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Anirudh Gupta - AI Lab</title>
-  <link rel="stylesheet" href="index-DwpavHX9.css" />
-  <style>
-    body {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(-45deg,#263857,#162447,#1f3a93,#0d1333);
-      background-size: 400% 400%;
-      animation: gradient 15s ease infinite;
-      font-family: 'Inter', system-ui, sans-serif;
-    }
-    .container {
-      max-width: 650px;
-      width: 95vw;
-      display: flex;
-      flex-direction: column;
-      gap: 2.5rem;
-      z-index: 2;
-    }
-    .glass-card {
-      background: rgba(255,255,255,0.10);
-      border: 1.5px solid rgba(255,255,255,.12);
-      box-shadow: 0 6px 32px 0 rgba(58,85,180, 0.07);
-      border-radius: 20px;
-      padding: 2.5rem 2rem;
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      margin: 0;
-    }
-    h1, h2 {
-      margin: 0 0 1.5rem 0;
-      font-weight: 700;
-    }
-    h1 {
-      font-size: 2.8rem;
-      letter-spacing: -1px;
-    }
-    h2 {
-      font-size: 2rem;
-      color: #45badd;
-    }
-    p {
-      margin: 0 0 2.2rem 0;
-      font-size: 1.1rem;
-      color: #e8ecf0;
-    }
-    .linkedin-link {
-      color: #45badd;
-      text-decoration: underline;
-      font-weight: 500;
-      transition: color 0.2s;
-    }
-    .linkedin-link:hover {
-      color: #70ebff;
-    }
-    .summary {
-      display: flex;
-      justify-content: center;
-      gap: 3rem;
-      margin-top: 1.2rem;
-    }
-    .summary-item {
-      text-align: center;
-    }
-    .summary-item strong {
-      display: block;
-      font-size: 2rem;
-      color: #fff;
-      font-weight: 600;
-      margin-bottom: 0.4rem;
-    }
-    .summary-item span {
-      font-size: 1rem;
-      color: #b1c0d6;
-      letter-spacing: 0.01em;
-    }
-    @media (max-width: 600px) {
-      .container {
-        max-width: 98vw;
-        gap: 1.5rem;
-      }
-      .glass-card {
-        padding: 1.2rem 0.5rem;
-      }
-      h1 {
-        font-size: 2rem;
-      }
-      h2 {
-        font-size: 1.3rem;
-      }
-      .summary {
-        gap: 1.4rem;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anirudh Gupta | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <section class="glass-card">
-      <h1>About Me</h1>
-      <p>
-        Hi, I'm Anirudh Gupta, a Product Manager passionate about building, experimenting, and prototyping with AI, Agentic AI, and Automation.
-      </p>
-      <a class="linkedin-link" href="https://www.linkedin.com/in/guptaanirudh/" target="_blank" rel="noopener">My LinkedIn Profile</a>
-    </section>
-    <section class="glass-card">
-      <h2>Anirudh's AI Lab</h2>
-      <p>
-        Building, creating, testing, prototyping, and playing with AI technology and automation.
-      </p>
-      <div class="summary">
-        <div class="summary-item">
-          <strong>12</strong>
-          <span>Projects</span>
-        </div>
-        <div class="summary-item">
-          <strong>5</strong>
-          <span>Prototypes</span>
-        </div>
-        <div class="summary-item">
-          <strong>7</strong>
-          <span>Automations</span>
-        </div>
+  <!-- Navbar -->
+  <header>
+    <div class="logo">AG</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#ai-lab">AI Lab</a>
+      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>
+      Anirudh <span>Gupta</span>
+    </h1>
+    <p>Product Manager building the future with AI</p>
+    <div class="buttons">
+      <a href="#ai-lab" class="btn">Explore My Work</a>
+      <a href="https://www.linkedin.com" target="_blank" class="btn linkedin">Connect on LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a Product Manager passionate about leveraging AI to solve complex
+      problems and create meaningful experiences. With a focus on innovation
+      and user-centric design, I bridge the gap between cutting-edge
+      technology and real-world applications.
+    </p>
+    <a href="https://www.linkedin.com" target="_blank" class="btn linkedin">View LinkedIn Profile</a>
+  </section>
+
+  <!-- AI Lab Section -->
+  <section id="ai-lab" class="ai-lab">
+    <h2>Anirudh's AI Lab</h2>
+    <p>
+      Where innovation meets implementation. Exploring the frontiers of AI
+      technology through hands-on experimentation, prototyping, and practical
+      applications.
+    </p>
+    <div class="stats">
+      <div class="stat"><h3>25+</h3><p>AI Projects</p></div>
+      <div class="stat"><h3>15+</h3><p>Prototypes</p></div>
+      <div class="stat"><h3>40+</h3><p>Automations</p></div>
+      <div class="stat"><h3>8+</h3><p>Agentic AI Systems</p></div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h4>AI Innovation</h4>
+        <p>
+          Building cutting-edge AI solutions from concept to deployment,
+          focusing on practical applications that solve real-world problems.
+        </p>
       </div>
-    </section>
-  </div>
-  <script src="index-BmfxolLw.js"></script>
+      <div class="card">
+        <h4>Agentic AI</h4>
+        <p>
+          Developing autonomous AI agents that can reason, plan, and execute
+          complex tasks with minimal human intervention.
+        </p>
+      </div>
+      <div class="card">
+        <h4>AI Automation</h4>
+        <p>
+          Creating intelligent automation systems that streamline workflows
+          and enhance productivity across various domains.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
